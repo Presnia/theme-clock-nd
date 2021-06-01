@@ -48,6 +48,10 @@ body {
   outline: none;
 }
 
+.toggle:active {
+  transform: scale(0.98);
+}
+
 .clock-container {
   display: flex;
   flex-direction: column;
@@ -69,6 +73,7 @@ body {
   width: 3px;
   height: 65px;
   transform-origin: bottom center;
+  transition: all 0.3s ease-in;
 }
 
 .needle.hour {
